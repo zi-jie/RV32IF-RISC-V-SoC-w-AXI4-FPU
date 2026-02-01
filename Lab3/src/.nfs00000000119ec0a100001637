@@ -1,0 +1,42 @@
+module aFIFO_depth1 #(
+    parameter DATA_WIDTH = 1  // 数据宽度
+)(
+    input wire clk1,       // 写时钟
+    input wire clk2,        // 读时钟
+    input logic rst,
+    input logic rst2,
+    input wire wpush,        // 写使能
+    input wire rpop,         // 读使能
+    input wire [DATA_WIDTH-1:0] data_in,  // 输入数据
+    output reg [DATA_WIDTH-1:0] data_out, // 输出数据
+    output reg fifo_full,       // FIFO满标志
+    output reg fifo_empty       // FIFO空标志
+);
+
+    // FIFO 状态，1位表示FIFO是否空，1位表示FIFO是否满
+    reg fifo_flag; // 0: FIFO空，1: FIFO满
+
+    always_ff @(posedge clk1 or posedge rst) begin
+        if (rst) begin
+            data_out <= 1'd0;
+            fifo_flag <= 1'd0;
+        end if (wpush && !fifo_full) begin
+            data_out <= data_in;   // 写数据到FIFO
+            fifo_flag <= 1'b1;      // FIFO 满
+        end
+    end
+
+    always_ff @(posedge clk2 or posedge rst2) begin
+        if (rpop && !fifo_empty) begin
+            data_out <= 0;   // 读取数据（FIFO空时输出0）
+            fifo_flag <= 1'b0; // FIFO 变空
+        end
+    end
+
+    // 生成 FIFO 满和 FIFO 空标志
+    always_comb begin
+        fifo_full = fifo_flag;  // FIFO 满
+        fifo_empty = !fifo_flag; // FIFO 空
+    end
+
+endmodule

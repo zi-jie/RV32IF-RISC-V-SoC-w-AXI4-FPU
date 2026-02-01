@@ -1,0 +1,39 @@
+tensor([[[[-36, -23, -36,   2, -43,  42,  36,  -3, -31,   9,  -8, -38, -43],
+          [ 34, -38, -38, -40,  42,  34, -37, -40,  -6,  19, -43, -31, -38],
+          [-38, -39,  42,  36,   9, -37, -41,  28, -43, -37, -42,  42, -43],
+          [ 14,  42,  31, -42, -24, -39,  25, -42, -43,  42, -18, -39, -36],
+          [-37,  11, -43,  -7, -38, -25, -37, -39,  25, -43, -38, -42,  -2],
+          [-38,  -6, -42,  -5, -41, -43, -10, -37, -43, -42, -14, -24, -16],
+          [-24, -43, -29, -35,  35, -36,  42, -43,  42,  -8, -23,  28,  40],
+          [ 42, -30,  42,  37, -37, -37, -31, -40, -36, -37,  42, -32, -37],
+          [ 29,   8, -10,  21, -42,  38, -39, -17, -39,  15, -39, -41, -40],
+          [-40,  14, -40,   9, -36, -30, -20,  42,  -4, -36, -43, -43, -36],
+          [-41, -43, -43, -41, -43, -41, -38,   6, -38, -38, -43, -29, -37],
+          [-36, -36,  42, -30, -41, -28, -38, -43, -42, -37,  42,  42, -38],
+          [ 31, -14,   7, -36, -13,  14, -39, -41, -28,  30, -36,  26, -28]]]], dtype=torch.int32)
+@00000000
+ff dc ff e9 ff dc 00 02 ff d5 00 2a 00 24 ff fd ff e1 00 09 ff f8 ff da ff d5 
+@00000040
+00 22 ff da ff da ff d8 00 2a 00 22 ff db ff d8 ff fa 00 13 ff d5 ff e1 ff da 
+@00000080
+ff da ff d9 00 2a 00 24 00 09 ff db ff d7 00 1c ff d5 ff db ff d6 00 2a ff d5 
+@000000c0
+00 0e 00 2a 00 1f ff d6 ff e8 ff d9 00 19 ff d6 ff d5 00 2a ff ee ff d9 ff dc 
+@00000100
+ff db 00 0b ff d5 ff f9 ff da ff e7 ff db ff d9 00 19 ff d5 ff da ff d6 ff fe 
+@00000140
+ff da ff fa ff d6 ff fb ff d7 ff d5 ff f6 ff db ff d5 ff d6 ff f2 ff e8 ff f0 
+@00000180
+ff e8 ff d5 ff e3 ff dd 00 23 ff dc 00 2a ff d5 00 2a ff f8 ff e9 00 1c 00 28 
+@000001c0
+00 2a ff e2 00 2a 00 25 ff db ff db ff e1 ff d8 ff dc ff db 00 2a ff e0 ff db 
+@00000200
+00 1d 00 08 ff f6 00 15 ff d6 00 26 ff d9 ff ef ff d9 00 0f ff d9 ff d7 ff d8 
+@00000240
+ff d8 00 0e ff d8 00 09 ff dc ff e2 ff ec 00 2a ff fc ff dc ff d5 ff d5 ff dc 
+@00000280
+ff d7 ff d5 ff d5 ff d7 ff d5 ff d7 ff da 00 06 ff da ff da ff d5 ff e3 ff db 
+@000002c0
+ff dc ff dc 00 2a ff e2 ff d7 ff e4 ff da ff d5 ff d6 ff db 00 2a 00 2a ff da 
+@00000300
+00 1f ff f2 00 07 ff dc ff f3 00 0e ff d9 ff d7 ff e4 00 1e ff dc 00 1a ff e4 

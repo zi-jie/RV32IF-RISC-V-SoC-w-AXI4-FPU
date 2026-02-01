@@ -1,0 +1,39 @@
+tensor([[[[ -1,  42, -36,  42,  42,  23, -40, -40, -29, -43, -43, -42, -37],
+          [-16,  42,  42,  42,   3, -43, -36, -36, -43, -43, -39,  -4, -38],
+          [ 42,  42,  42, -32, -40, -37, -38, -43, -43,  -1, -43,  42, -36],
+          [ 42, -40, -25, -38, -23, -19, -43, -38, -37, -37, -43,  25,   6],
+          [-39, -28, -36,  -8, -38, -43, -36, -42, -43, -41,  35, -43,  42],
+          [-43,  42, -39,   7, -38,  -8, -42, -43, -18, -41,  39,   9, -26],
+          [-39,  41,  42, -40,  24, -41, -42, -36,  39, -35, -24, -27, -42],
+          [ 42, -38,  37, -42, -37, -42, -12, -43,  42, -20, -43, -43, -39],
+          [ 42, -41, -43, -21, -43, -36, -36,  -4, -30, -39, -43, -41, -36],
+          [-41, -40, -43, -38, -43, -37, -36, -20, -43, -43, -38, -12, -11],
+          [-43,   0, -39, -43, -37, -16, -42, -39, -43, -37,  42, -28,  11],
+          [ 40,  24, -38, -39,   6, -26, -43, -41, -15,  27, -21,  24, -19],
+          [  5, -42, -36, -28, -36, -37, -37, -36,  12, -35, -38,  19, -37]]]], dtype=torch.int32)
+@00000000
+ff ff 00 2a ff dc 00 2a 00 2a 00 17 ff d8 ff d8 ff e3 ff d5 ff d5 ff d6 ff db 
+@00000040
+ff f0 00 2a 00 2a 00 2a 00 03 ff d5 ff dc ff dc ff d5 ff d5 ff d9 ff fc ff da 
+@00000080
+00 2a 00 2a 00 2a ff e0 ff d8 ff db ff da ff d5 ff d5 ff ff ff d5 00 2a ff dc 
+@000000c0
+00 2a ff d8 ff e7 ff da ff e9 ff ed ff d5 ff da ff db ff db ff d5 00 19 00 06 
+@00000100
+ff d9 ff e4 ff dc ff f8 ff da ff d5 ff dc ff d6 ff d5 ff d7 00 23 ff d5 00 2a 
+@00000140
+ff d5 00 2a ff d9 00 07 ff da ff f8 ff d6 ff d5 ff ee ff d7 00 27 00 09 ff e6 
+@00000180
+ff d9 00 29 00 2a ff d8 00 18 ff d7 ff d6 ff dc 00 27 ff dd ff e8 ff e5 ff d6 
+@000001c0
+00 2a ff da 00 25 ff d6 ff db ff d6 ff f4 ff d5 00 2a ff ec ff d5 ff d5 ff d9 
+@00000200
+00 2a ff d7 ff d5 ff eb ff d5 ff dc ff dc ff fc ff e2 ff d9 ff d5 ff d7 ff dc 
+@00000240
+ff d7 ff d8 ff d5 ff da ff d5 ff db ff dc ff ec ff d5 ff d5 ff da ff f4 ff f5 
+@00000280
+ff d5 00 00 ff d9 ff d5 ff db ff f0 ff d6 ff d9 ff d5 ff db 00 2a ff e4 00 0b 
+@000002c0
+00 28 00 18 ff da ff d9 00 06 ff e6 ff d5 ff d7 ff f1 00 1b ff eb 00 18 ff ed 
+@00000300
+00 05 ff d6 ff dc ff e4 ff dc ff db ff db ff dc 00 0c ff dd ff da 00 13 ff db 

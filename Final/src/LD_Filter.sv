@@ -1,0 +1,43 @@
+module LD_Filter (
+    input [2:0] func3,      // Operation type
+    input [31:0] ld_data,   // Data loaded from memory
+    input [1:0] WB_alu_out_01, // select position of data
+    output reg [31:0] ld_data_f  // Filtered data output
+);
+
+    // Process loaded data based on func3 value
+    always_comb begin
+        case (func3)
+            3'b000: // LB: Load Byte
+                case (WB_alu_out_01)
+                    2'b00: ld_data_f = {{24{ld_data[7]}}, ld_data[7:0]};
+                    2'b01: ld_data_f = {{24{ld_data[15]}}, ld_data[15:8]};
+                    2'b10: ld_data_f = {{24{ld_data[23]}}, ld_data[23:16]};
+                    2'b11: ld_data_f = {{24{ld_data[31]}}, ld_data[31:24]};
+                endcase
+                    // ld_data_f = {{24{ld_data[7]}}, ld_data[7:0]}; // Sign-extend from byte
+            3'b001: // LH: Load Halfword
+                case (WB_alu_out_01[1])
+                    1'b0: ld_data_f = {{16{ld_data[15]}}, ld_data[15:0]}; // Lower halfword
+                    1'b1: ld_data_f = {{16{ld_data[31]}}, ld_data[31:16]}; // Upper halfword
+                endcase
+            3'b010: // LW: Load Word
+                ld_data_f = ld_data; // Direct assignment (word is already 32-bit)
+            3'b100: // LBU: Load Byte Unsigned
+                case (WB_alu_out_01)
+                    2'b00: ld_data_f = {24'b0, ld_data[7:0]};
+                    2'b01: ld_data_f = {24'b0, ld_data[15:8]};
+                    2'b10: ld_data_f = {24'b0, ld_data[23:16]};
+                    2'b11: ld_data_f = {24'b0, ld_data[31:24]};
+                endcase
+            3'b101: // LHU: Load Halfword Unsigned
+                case (WB_alu_out_01[1])
+                    1'b0: ld_data_f = {16'b0, ld_data[15:0]}; // Lower halfword
+                    1'b1: ld_data_f = {16'b0, ld_data[31:16]}; // Upper halfword
+                endcase
+            default:
+                ld_data_f = 32'b0; // Fallback for undefined func3 codes
+        endcase
+    end
+
+endmodule

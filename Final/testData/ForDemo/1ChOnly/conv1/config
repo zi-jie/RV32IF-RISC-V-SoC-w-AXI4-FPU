@@ -1,0 +1,7 @@
+ifm:13x13, 1 channel
+weights: 1x1, 4 kernels
+No tile
+conv1
+addSat
+ReLU
+ReQuant

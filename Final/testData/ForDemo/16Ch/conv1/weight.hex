@@ -1,0 +1,15 @@
+  Parameter containing:
+tensor([[[[-70]]],
+
+
+        [[[ 77]]],
+
+
+        [[[-46]]],
+
+
+        [[[  5]]]], dtype=torch.int32)
+ba 
+4d 
+d2 
+05 

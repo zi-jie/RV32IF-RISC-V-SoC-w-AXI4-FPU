@@ -1,0 +1,8 @@
+ifm:24x24, 1 channel
+weights: 3x3, 4 kernels
+9 tiles, (3x3 per output tile)
+conv3
+addSat
+ReLU
+ReQuant
+pool
