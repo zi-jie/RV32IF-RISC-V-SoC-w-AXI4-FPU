@@ -1,4 +1,4 @@
-# RV32IF-RISC-V-SoC-RTL-to-GDSII-Implementation-with-AXI4-FPU
+# RV32IF RISC-V SoC w/ AXI4, FPU
 Course Project: Advanced VLSI System Design (AVSD) 
 
 Keywords: RTL / SystemVerilog / RISC-V / SoC / CDC / AXI4 / Assembly
